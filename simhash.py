@@ -83,11 +83,11 @@ if __name__ == '__main__':
     s2 = 'This is a test string for testing also!'
     hash2 = Simhash("".join(s2.split()))
     # print ("%s/t[simhash = 0x%x]" % (s, hash2))
-    s3 = 'Hello world, hello Python'
+    s3 = 'Hello world, hello Python, honorificabilitudinitatibus'
     hash3 = Simhash("".join(s3.split()))
     # test
 
     print(hash1.similarity(hash2), "percent similar")
-    print(hash1.similarity(hash3), "percent similar")
+    print(hash3.similarity(hash1), "percent similar")
     print(hash1.hamming_distance(hash2), "bits differ out of", hash1.hashbits)
     print(hash1.hamming_distance(hash3), "bits differ out of", hash1.hashbits)
