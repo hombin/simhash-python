@@ -76,6 +76,7 @@ class Simhash(object):
             return b/a
         return a/b
 
+
 if __name__ == '__main__':
     s1 = 'This is a test string for testing'
     hash1 = Simhash("".join(s1.split()))
