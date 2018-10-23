@@ -1,1 +1,1 @@
-# simhash_python
+# simhash-python
